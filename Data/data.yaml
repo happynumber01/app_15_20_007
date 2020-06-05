@@ -1,0 +1,8 @@
+#value: "hello"
+#value1: true
+#value2: false
+##value3: 12
+##value4: 12.102
+#value5: ~ # ~
+with open("./text.yaml","w") as f:
+  yaml.safe_dump(data,f,encoding='utf-8',allow_unicode=True)
